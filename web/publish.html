@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- 头部导航（复用） -->
-    <header>
+     <header>
         <div class="container nav-wrap">
             <a href="index.html" class="logo">Campus<span>Second-hand</span>Market</a>
             <ul class="nav-list">
@@ -28,7 +28,7 @@
     <div class="page-container">
         <h2 class="page-title">List available items for sale</h2>
         
-        <form class="publish-form">
+        <form class="publish-form" id="publishForm">
             <div class="form-group">
                 <label for="goods-title">title</label>
                 <input type="text" id="goods-title" placeholder="Please enter the product title (for example: New Calculus textbook with accompanying exercise book)">
@@ -50,7 +50,7 @@
 
             <div class="form-group">
                 <label for="goods-price">price</label>
-                <input type="number" id="goods-price" placeholder="type price, 0 is for free">
+                <input type="number" id="goods-price" placeholder="type price, 0 is for free" min="0">
             </div>
 
             <div class="form-group">
@@ -60,10 +60,13 @@
 
             <div class="form-group">
                 <label>Product images (required, up to 5 images)</label>
-                <div class="upload-area">
-                    <i class="fas fa-cloud-upload-alt"></i>
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt" style="font-size: 48px; color: #666;"></i>
                     <p>Click or drag the image here to upload it.</p>
                     <p style="font-size: 12px;">Supports JPG/PNG formats. Each image should not exceed 5MB.</p>
+                    <input type="file" id="fileInput" multiple accept="image/jpeg,image/png" style="display: none;">
+                    <div id="previewArea" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+                    <div class="error-tip" id="uploadError"></div>
                 </div>
             </div>
 
@@ -72,7 +75,7 @@
                 <input type="text" id="contact-way" placeholder="Please enter your mobile phone number.">
             </div>
 
-            <button type="button" class="submit-btn">publish</button>
+            <button type="button" class="submit-btn" id="submitBtn">publish</button>
         </form>
     </div>
 
@@ -83,5 +86,6 @@
             <p>Transaction Instructions: Conduct the transaction face-to-face in person, inspect the goods and make payment. Be cautious of fraud.</p>
         </div>
     </footer>
+<script src="./publish.js"></script>
 </body>
 </html>
