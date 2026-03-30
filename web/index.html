@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Campus Recycling</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Second-hand Community - Your campus idle goods trading platform</title>
+    <!-- 引入独立的CSS文件 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <nav>
-    <div id="navigation">
-      <a href="./index.html">Campus Recycling</a>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">Campus<span>Second-hand</span>Market</a>
+            <ul class="nav-list">
+                <li><a href="index.html" style="color: #409eff; border-bottom: 2px solid #409eff;">Home</a></li>
+                <li><a href="all goods.html">All goods</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="publish.html" class="publish-btn">Release the idle state</a></li>
+                <li class="avatar-box">
+                    <img src="./img/默认用户头像.png" alt="用户头像" class="avatar-img">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 搜索栏 -->
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search items:books, digital, daily necessities...">
+                <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </section>
+
+        <!-- 推荐商品 -->
+        <section class="goods-section">
+            <h2 class="section-title">choiceness</h2>
+            <div class="goods-wrap">
+                <!-- 商品卡片1 -->
+                <div class="goods-card">
+                    <img src="https://picsum.photos/240/180?random=1" alt="校园二手商品" class="goods-img">
+                    <div class="goods-info">
+                        <h3 class="goods-title">大学高数教材 全新未用 送习题册</h3>
+                        <p class="goods-price">¥25</p>
+                        <p class="goods-owner">发布人：大一数学系</p>
+                    </div>
+                </div>
+                <!-- 商品卡片2 -->
+                <div class="goods-card">
+                    <img src="https://picsum.photos/240/180?random=2" alt="校园二手商品" class="goods-img">
+                    <div class="goods-info">
+                        <h3 class="goods-title">小米平板5 6+128G 几乎全新 带保护套</h3>
+                        <p class="goods-price">¥999</p>
+                        <p class="goods-owner">发布人：大三计科</p>
+                    </div>
+                </div>
+                <!-- 商品卡片3 -->
+                <div class="goods-card">
+                    <img src="https://picsum.photos/240/180?random=3" alt="校园二手商品" class="goods-img">
+                    <div class="goods-info">
+                        <h3 class="goods-title">宿舍折叠桌 学习桌 高度可调</h3>
+                        <p class="goods-price">¥30</p>
+                        <p class="goods-owner">发布人：大二文学院</p>
+                    </div>
+                </div>
+                <!-- 商品卡片4 -->
+                <div class="goods-card">
+                    <img src="https://picsum.photos/240/180?random=4" alt="校园二手商品" class="goods-img">
+                    <div class="goods-info">
+                        <h3 class="goods-title">山地自行车 26寸 九成新 送锁和挡泥板</h3>
+                        <p class="goods-price">¥350</p>
+                        <p class="goods-owner">发布人：大四经管</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div id="navigation-bar">
-      <a href="./index.html" class="active">Home</a>
-      <a href="./Goods.html">Goods</a>
-      <a href="./Community.html">Community</a>
-      <a href="./About Us.html">About Us</a>
-      <a href="./Login.html">
-        <img src="./img/a8ff34e58a425c4935dc708065457252.png" alt="Log In" />
-      </a>
-    </div>
-  </nav>
-
-  <main class="home-page">
-    <section class="home-hero">
-      <h1>Reduce Waste. Reuse Goods. Build a Green Campus.</h1>
-      <p>
-        Campus Recycling helps students exchange second-hand items,
-        share recycling tips, and support a sustainable university life.
-      </p>
-      <div class="hero-buttons">
-        <a href="./Goods.html" class="primary-btn">Browse Goods</a>
-        <a href="./Community.html" class="secondary-btn">Join Community</a>
-      </div>
-    </section>
-
-    <section class="home-features">
-      <div class="feature-card">
-        <h2>♻️ Recycle Smarter</h2>
-        <p>Learn how to sort waste correctly and reduce landfill impact.</p>
-      </div>
-
-      <div class="feature-card">
-        <h2>🛍 Exchange Goods</h2>
-        <p>Buy, sell, or donate second-hand items within the campus.</p>
-      </div>
-
-      <div class="feature-card">
-        <h2>🤝 Community Events</h2>
-        <p>Join workshops, swap days, and green activities.</p>
-      </div>
-    </section>
-
-    <section class="home-about">
-      <h2>About Campus Recycling</h2>
-      <p>
-        Our goal is to make campus life more sustainable by encouraging
-        students to reuse resources and reduce waste. Together, we can
-        create a greener future.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div id="contact">
-      <strong>Contact Us!</strong>
-      <p>Phone: 98998231</p>
-      <p>Address: James Cook University Singapore</p>
-      <p>
-        Email:
-        <a href="mailto:yisong.luo@my.jcu.edu.au">yisong.luo@my.jcu.edu.au</a>
-      </p>
-    </div>
-  </footer>
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-text">
+            <p>Campus Second-hand Market © 2025 This platform is only open to students of this school. All校外 merchants are prohibited.</p>
+            <p>Transaction Instructions: Conduct the transaction face-to-face in person, inspect the goods and make payment. Be cautious of fraud.</p>
+        </div>
+    </footer>
 </body>
 </html>
